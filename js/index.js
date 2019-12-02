@@ -73,3 +73,10 @@ featureP.textContent = siteContent['main-content']['feature-content']
 let aboutP = topContentP[1]
 aboutP.textContent = siteContent['main-content']['about-content']
 
+// Main-content : middle-image
+let middleImg = document.querySelector('#middle-img')
+middleImg.src = siteContent['main-content']['middle-img-src']
+
+
+
+
