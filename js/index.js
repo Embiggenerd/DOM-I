@@ -1,11 +1,13 @@
 const siteContent = {
   "nav": {
+    "nav-item-0": "Ducks",
     "nav-item-1": "Services",
     "nav-item-2": "Product",
     "nav-item-3": "Vision",
     "nav-item-4": "Features",
     "nav-item-5": "About",
     "nav-item-6": "Contact",
+    "nav-item-7": "Trucks",
     "img-src": "img/logo.png"
   },
   "cta": {
@@ -42,9 +44,20 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Nav links
+const linksParent = document.querySelector('nav')
+const link = document.createElement("a")
+const link2 = document.createElement("a")
+
+link.href="#"
+link2.href="#"
+
+linksParent.prepend(link)
+linksParent.appendChild(link2)
+
 let links = document.querySelectorAll('nav > a')
 for(let i = 0; i < links.length; i++){
   links[i].textContent = Object.values(siteContent.nav)[i]
+  links[i].style.color = "green"
 }
 
 // CTA section
@@ -105,6 +118,3 @@ document.querySelector('.contact *:nth-child(4)').textContent = siteContent.cont
 // Footer
 let footerContent = document.querySelector('footer p')
 footerContent.textContent = siteContent.footer.copyright
-
-
-
