@@ -95,3 +95,14 @@ btmContentP[1].textContent = siteContent["main-content"]["product-content"]
 btmContentP[2].textContent = siteContent["main-content"]["vision-content"]
 
 
+// Contacts
+document.querySelector('.contact *:nth-child(1)').textContent = siteContent.contact["contact-h4"]
+document.querySelector('.contact *:nth-child(2)').textContent = siteContent.contact.address
+document.querySelector('.contact *:nth-child(3)').textContent = siteContent.contact.phone
+document.querySelector('.contact *:nth-child(4)').textContent = siteContent.contact.email
+
+
+
+
+
+
