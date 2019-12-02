@@ -46,3 +46,14 @@ let links = document.querySelectorAll('nav > a')
 for(let i = 0; i < links.length; i++){
   links[i].textContent = Object.values(siteContent.nav)[i]
 }
+
+// CTA section
+let h1 = document.querySelector('h1')
+h1.textContent = siteContent.cta.h1
+
+let ctaButton = document.querySelector('.cta-text > button')
+ctaButton.textContent = siteContent.cta.button
+
+let ctaImg = document.querySelector('#cta-img')
+ctaImg.src = siteContent.cta["img-src"]
+
