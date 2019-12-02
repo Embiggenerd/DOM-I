@@ -57,3 +57,19 @@ ctaButton.textContent = siteContent.cta.button
 let ctaImg = document.querySelector('#cta-img')
 ctaImg.src = siteContent.cta["img-src"]
 
+// Main-content : top-content : h4
+let topContentH4 = document.querySelectorAll('.top-content h4')
+let featureH4 = topContentH4[0]
+featureH4.textContent = siteContent['main-content']['features-h4']
+
+let aboutH4 = topContentH4[1]
+aboutH4.textContent = siteContent['main-content']['about-h4']
+
+// Main-content : top-content : p
+let topContentP = document.querySelectorAll('.top-content p')
+let featureP = topContentP[0]
+featureP.textContent = siteContent['main-content']['feature-content']
+
+let aboutP = topContentP[1]
+aboutP.textContent = siteContent['main-content']['about-content']
+
