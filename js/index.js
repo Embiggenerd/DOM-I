@@ -57,6 +57,7 @@ ctaButton.textContent = siteContent.cta.button
 let ctaImg = document.querySelector('#cta-img')
 ctaImg.src = siteContent.cta["img-src"]
 
+
 // Main-content : top-content : h4
 let topContentH4 = document.querySelectorAll('.top-content h4')
 let featureH4 = topContentH4[0]
@@ -65,18 +66,32 @@ featureH4.textContent = siteContent['main-content']['features-h4']
 let aboutH4 = topContentH4[1]
 aboutH4.textContent = siteContent['main-content']['about-h4']
 
+
 // Main-content : top-content : p
 let topContentP = document.querySelectorAll('.top-content p')
 let featureP = topContentP[0]
-featureP.textContent = siteContent['main-content']['feature-content']
+featureP.textContent = siteContent['main-content']['features-content']
 
 let aboutP = topContentP[1]
 aboutP.textContent = siteContent['main-content']['about-content']
+
 
 // Main-content : middle-image
 let middleImg = document.querySelector('#middle-img')
 middleImg.src = siteContent['main-content']['middle-img-src']
 
 
+// Main-content : bottom-content : h4
+let btmContentH4 = document.querySelectorAll('.bottom-content h4')
+btmContentH4[0].textContent = siteContent["main-content"]["services-h4"]
+btmContentH4[1].textContent = siteContent["main-content"]["product-h4"]
+btmContentH4[2].textContent = siteContent["main-content"]["vision-h4"]
+
+
+// Main-content : bottom-content : p
+let btmContentP = document.querySelectorAll('.bottom-content p')
+btmContentP[0].textContent = siteContent["main-content"]["services-content"]
+btmContentP[1].textContent = siteContent["main-content"]["product-content"]
+btmContentP[2].textContent = siteContent["main-content"]["vision-content"]
 
 
