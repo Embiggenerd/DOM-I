@@ -102,7 +102,9 @@ document.querySelector('.contact *:nth-child(3)').textContent = siteContent.cont
 document.querySelector('.contact *:nth-child(4)').textContent = siteContent.contact.email
 
 
-
+// Footer
+let footerContent = document.querySelector('footer p')
+footerContent.textContent = siteContent.footer.copyright
 
 
 
